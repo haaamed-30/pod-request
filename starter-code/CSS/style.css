@@ -1,0 +1,161 @@
+/* Start Global Rules */
+:root {
+    --main-color: #121725;
+    --main-sub-color: #54E6AF;
+    --input-color: #2C344B;
+    --sub-header-color: #FFFFFF;
+    --logo-color: #5A668A;
+    --text-color: #c2cbe5;
+    --heading-size-text: 52px;
+    --heading-heigth-text: 62px;
+    --text-size: 18px;
+    --text-heigth: 28px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Chivo', sans-serif;
+    background: var(--main-color);
+}
+/* End Global Rules */
+
+.section {
+    width: 1275px;
+    height: 640px;
+    position: absolute;
+    top: 130px;
+    left: 165px;
+    transform: translate(165px, 130px);
+}
+.section .main_logo {
+    position: absolute;
+    left: 165px;
+    top: -30px;
+}
+.section img {
+    width: 888px;
+    height: 100%;
+    position: relative;
+    /* top: 130px; */
+    left: 552px;
+    /* transform: translate(165px, 261px); */
+    z-index: -1;
+}
+.section .conte {
+    width: 723px;
+    height: 509px;
+    position: absolute;
+    top: 131px;
+    left: 165px;
+    /* transform: translate(165px, 261px); */
+    background: var(--main-color);
+    z-index: 2;
+}
+.section .conte .sub_section {
+    /* padding-top: 88px;
+    padding-right: 58px; */
+    width: 665px;
+    height: 421px;
+    z-index: -3;
+    position: absolute;
+    top: 88px;
+}
+.section .conte .heading {    
+    font-size: var(--heading-size-text);
+    font-weight: 300;
+    color: var(--main-sub-color);
+    line-height: 62px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.section .conte .heading span {    
+    color: var(--sub-header-color);
+}
+.section .conte p {    
+    color: var(--text-color);
+    font-size: var(--text-size);
+    line-height: 28px;
+    width: 445px;
+    font-weight: 300;
+}
+.section .conte .email_form form {
+    position: relative;
+    top: 20px;
+    /* position: absolute; */
+}
+.section .conte .email_form .email_input {
+    border-radius: 30px;
+    border: none;
+    width: 427px;
+    height: 56px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    padding-left: 25px;
+    background: var(--input-color);
+    color: var(--sub-header-color);
+    position: absolute;
+    top: 24.7px;
+    z-index: -1;
+    outline: none;
+}
+.section .conte .email_form .error_message_empty{
+    color: #FB3E3E;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 85px;
+    left: 25px;
+    display: none;
+}
+.section .conte .email_form .error_message_nochar {
+    color: #FB3E3E;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 85px;
+    left: 25px;
+    display: none;
+}
+.section .conte .email_form .submit_input {
+    border-radius: 30px;
+    border: none;
+    width: 162px;
+    height: 46px;
+    background: var(--main-sub-color);
+    font-weight: 400;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    position: absolute;
+    left: 261px;
+    cursor: pointer;
+    top: 30px;
+}
+.section .conte .email_form .submit_input:hover {
+    background-color: #B3FFE2;
+}
+.section .conte .logo_one,
+.section .conte .logo_two,
+.section .conte .logo_three,
+.section .conte .logo_four {
+    position: relative;
+    top: 175px;
+    display: inline-block;
+    margin-left: 25px;
+}
+.section .conte .logo_one {
+    margin: 0;
+}
+.section .drops {
+    position: absolute;
+    right: -166px;
+    bottom: -60px;
+    margin-top: 25px;
+}
