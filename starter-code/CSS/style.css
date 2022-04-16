@@ -33,7 +33,7 @@ body {
 .section .main_logo {
     position: absolute;
     left: 0px;
-    top: -30px;
+    top: -29px;
 }
 .section img {
     width: 888px;
@@ -80,10 +80,11 @@ body {
     line-height: 28px;
     width: 445px;
     font-weight: 300;
+    margin-top: 10px;
 }
 .section .conte .email_form form {
     position: relative;
-    top: 20px;
+    top: 30px;
     /* position: absolute; */
 }
 .section .conte .email_form .email_input {
