@@ -28,11 +28,11 @@ body {
     position: absolute;
     top: 130px;
     left: 165px;
-    transform: translate(165px, 130px);
+    /* transform: translate(165px, 130px); */
 }
 .section .main_logo {
     position: absolute;
-    left: 165px;
+    left: 0px;
     top: -30px;
 }
 .section img {
@@ -40,7 +40,7 @@ body {
     height: 100%;
     position: relative;
     /* top: 130px; */
-    left: 552px;
+    left: 387px;
     /* transform: translate(165px, 261px); */
     z-index: -1;
 }
@@ -49,7 +49,7 @@ body {
     height: 509px;
     position: absolute;
     top: 131px;
-    left: 165px;
+    left: 0px;
     /* transform: translate(165px, 261px); */
     background: var(--main-color);
     z-index: 2;
@@ -155,7 +155,7 @@ body {
 }
 .section .drops {
     position: absolute;
-    right: -166px;
+    right: -3px;
     bottom: -60px;
     margin-top: 25px;
 }
