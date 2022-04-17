@@ -28,21 +28,72 @@ body {
     position: absolute;
     top: 130px;
     left: 165px;
-    /* transform: translate(165px, 130px); */
+}
+@media (max-width: 768px) {
+    .section {
+        width: 768px;
+        height: 1024px;
+    }
+}
+@media (max-width: 375px) {
+    .section {
+        width: 375px;
+        height: 667px;
+        position: relative;
+    }
 }
 .section .main_logo {
     position: absolute;
     left: 0px;
     top: -29px;
 }
+@media (max-width: 768px) {
+    .section .main_logo  {
+        width: 134.85px;
+        height: 56px;
+        top: 50px;
+        left: 39px;
+    }
+}
+@media (max-width: 375px) {
+    .section .main_logo {
+        top: 62px;
+        left: 120px;
+        z-index: 6;
+    }
+}
 .section img {
     width: 888px;
     height: 100%;
-    position: relative;
-    /* top: 130px; */
+    position: absolute;
     left: 387px;
-    /* transform: translate(165px, 261px); */
     z-index: -1;
+}
+@media (max-width: 768px) {
+    .section img {
+        display: none;
+    } 
+    .section .photo {
+        width: 491px;
+        height: 767px;
+        top: 0;
+        left: 277px;
+        background-image: url(/pod-request/starter-code/assets/tablet/image-host.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 375px) {
+    .section .photo {
+        background-image: url(/pod-request/starter-code/assets/mobile/image-host.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+    }
 }
 .section .conte {
     width: 723px;
@@ -50,18 +101,45 @@ body {
     position: absolute;
     top: 131px;
     left: 0px;
-    /* transform: translate(165px, 261px); */
     background: var(--main-color);
     z-index: 2;
 }
+@media (max-width: 768px) {
+    .section .conte  {
+        width: 635px;
+        height: 509px;
+        top: 258px;
+        left: 39px;
+    }
+}
+@media (max-width: 375px) {
+    .section .conte  {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: #121725d8;
+    }
+}
 .section .conte .sub_section {
-    /* padding-top: 88px;
-    padding-right: 58px; */
     width: 665px;
     height: 421px;
     z-index: -3;
     position: absolute;
     top: 88px;
+}
+@media (max-width: 768px) {
+    .section .conte .sub_section  {
+        width: 635px;
+        height: 416px;
+    }
+}
+@media (max-width: 375px) {
+    .section .conte .sub_section  {
+        width: 100%;
+        height: 100%;
+        top: 175px;
+    }
 }
 .section .conte .heading {    
     font-size: var(--heading-size-text);
@@ -74,6 +152,12 @@ body {
 .section .conte .heading span {    
     color: var(--sub-header-color);
 }
+@media (max-width: 768px) {
+    .section .conte .sub_section .heading {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
 .section .conte p {    
     color: var(--text-color);
     font-size: var(--text-size);
@@ -82,10 +166,29 @@ body {
     font-weight: 300;
     margin-top: 10px;
 }
+@media (max-width: 375px) {
+    .section .conte .sub_section .heading {
+        font-size: 27px;
+        text-align: center;
+        line-height: 38px;
+        width: 100%;
+    }
+    .section .conte .sub_section p {
+        position: absolute;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        width: 327px;
+        height: 100px;
+        margin: 0;
+        top: 100px;
+        left: 24px;
+        font-style: normal;
+    }
+}
 .section .conte .email_form form {
     position: relative;
     top: 30px;
-    /* position: absolute; */
 }
 .section .conte .email_form .email_input {
     border-radius: 30px;
@@ -104,7 +207,7 @@ body {
     z-index: -1;
     outline: none;
 }
-.section .conte .email_form .error_message_empty{
+.section .conte .email_form .error_message_empty {
     color: #FB3E3E;
     font-size: 12px;
     font-weight: 400;
@@ -142,6 +245,34 @@ body {
 .section .conte .email_form .submit_input:hover {
     background-color: #B3FFE2;
 }
+@media (max-width: 375px) {
+    .section .conte .email_form {
+        position: absolute;
+    }
+    .section .conte .email_form form {
+        width: 100%;
+        height: 108px;
+        top: 455px;
+    }
+    .section .conte .email_form .email_input  {
+        top: 0;
+        width: 327px;
+        left: 24px;
+        text-align: center;
+        padding: 0;
+    }
+    .section .conte .email_form .submit_input {
+        top: 65px;
+        width: 327px;
+        left:24px;
+    }
+    .section .conte .email_form .error_message_empty,
+    .section .conte .email_form .error_message_nochar {
+        top: -20px;
+        width: 200px;
+        left: 105px;
+    }
+}
 .section .conte .logo_one,
 .section .conte .logo_two,
 .section .conte .logo_three,
@@ -151,6 +282,20 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+@media (max-width: 375px) {
+    .section .conte .logo_one,
+    .section .conte .logo_two,
+    .section .conte .logo_three,
+    .section .conte .logo_four {
+        width: fit-content;
+        display: flex;
+        margin-left: 1px;
+        top: 230px;
+        margin-top: 20px;
+        left: 24px;
+
+}
+}
 .section .conte .logo_one {
     margin: 0;
 }
@@ -159,4 +304,17 @@ body {
     right: -3px;
     bottom: -60px;
     margin-top: 25px;
+}
+@media (max-width: 768px) {
+    .section .drops {
+        left: 30px;
+        top: 920px;
+        height: 104px;
+        width: 232px;
+    }
+}
+@media (max-width: 375px) {
+    .section .drops {
+        display: none;
+    }
 }
