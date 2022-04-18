@@ -29,13 +29,13 @@ body {
     top: 130px;
     left: 165px;
 }
-@media (max-width: 768px) {
+@media (min-width: 573px) and (max-width: 991px) {
     .section {
         width: 768px;
         height: 1024px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 572px) {
     .section {
         width: 375px;
         height: 667px;
@@ -47,7 +47,7 @@ body {
     left: 0px;
     top: -29px;
 }
-@media (max-width: 768px) {
+@media (min-width: 573px) and (max-width: 991px) {
     .section .main_logo  {
         width: 134.85px;
         height: 56px;
@@ -55,7 +55,7 @@ body {
         left: 39px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 572px){
     .section .main_logo {
         top: 62px;
         left: 120px;
@@ -69,11 +69,12 @@ body {
     left: 387px;
     z-index: -1;
 }
-@media (max-width: 768px) {
+@media (min-width: 573px) and (max-width: 991px) {
     .section img {
         display: none;
     } 
     .section .photo {
+        position: absolute;
         width: 491px;
         height: 767px;
         top: 0;
@@ -83,7 +84,10 @@ body {
         background-repeat: no-repeat;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 572px){
+    .section img {
+        display: none;
+    }
     .section .photo {
         background-image: url(/pod-request/starter-code/assets/mobile/image-host.jpg);
         background-size: 100%;
@@ -104,7 +108,7 @@ body {
     background: var(--main-color);
     z-index: 2;
 }
-@media (max-width: 768px) {
+@media (min-width: 573px) and (max-width: 991px) {
     .section .conte  {
         width: 635px;
         height: 509px;
@@ -112,7 +116,7 @@ body {
         left: 39px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 572px){
     .section .conte  {
         width: 100%;
         height: 100%;
@@ -128,13 +132,13 @@ body {
     position: absolute;
     top: 88px;
 }
-@media (max-width: 768px) {
+@media (min-width: 573px) and (max-width: 991px) {
     .section .conte .sub_section  {
         width: 635px;
         height: 416px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 572px){
     .section .conte .sub_section  {
         width: 100%;
         height: 100%;
@@ -152,7 +156,7 @@ body {
 .section .conte .heading span {    
     color: var(--sub-header-color);
 }
-@media (max-width: 768px) {
+@media (min-width: 573px) and (max-width: 991px) {
     .section .conte .sub_section .heading {
         font-size: 48px;
         line-height: 56px;
@@ -166,7 +170,7 @@ body {
     font-weight: 300;
     margin-top: 10px;
 }
-@media (max-width: 375px) {
+@media (max-width: 572px){
     .section .conte .sub_section .heading {
         font-size: 27px;
         text-align: center;
@@ -245,7 +249,7 @@ body {
 .section .conte .email_form .submit_input:hover {
     background-color: #B3FFE2;
 }
-@media (max-width: 375px) {
+@media (max-width: 572px){
     .section .conte .email_form {
         position: absolute;
     }
@@ -282,7 +286,7 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
-@media (max-width: 375px) {
+@media (max-width: 572px){
     .section .conte .logo_one,
     .section .conte .logo_two,
     .section .conte .logo_three,
@@ -305,7 +309,7 @@ body {
     bottom: -60px;
     margin-top: 25px;
 }
-@media (max-width: 768px) {
+@media (min-width: 573px) and (max-width: 991px) {
     .section .drops {
         left: 30px;
         top: 920px;
@@ -313,7 +317,7 @@ body {
         width: 232px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 572px){
     .section .drops {
         display: none;
     }
